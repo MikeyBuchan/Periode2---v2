@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerShootCardBuildBlock : MonoBehaviour
+public class PlayerShootBuildCard : MonoBehaviour
 {
     public GameObject buildCard;
     public Vector3 shootPos;

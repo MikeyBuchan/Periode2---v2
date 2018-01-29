@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightCardShoot : MonoBehaviour
+public class CardShootLight : MonoBehaviour
 {
     public Vector3 movement;
     public float speed;

@@ -34,12 +34,12 @@ public class UIgame : MonoBehaviour
 
         if (Input.GetButtonDown("2"))
         {
-            ChangeToLightCard();
+            ChangeToBuildCard(); 
         }
 
         if (Input.GetButtonDown("3"))
         {
-            ChangeToBuildCard();
+            ChangeToLightCard();
         }
     }
 
@@ -99,21 +99,21 @@ public class UIgame : MonoBehaviour
 
     public void ChangeToDamageCard()
     {
-        player.GetComponent<PlayerShootCardBuildBlock>().enabled = false;
+        player.GetComponent<PlayerShootBuildCard>().enabled = false;
         player.GetComponent<PlayerShootLightCard>().enabled = false;
         player.GetComponent<PlayerShootDamageCard>().enabled = true;
     }
 
     public void ChangeToBuildCard()
     {
-        player.GetComponent<PlayerShootCardBuildBlock>().enabled = true;
+        player.GetComponent<PlayerShootBuildCard>().enabled = true;
         player.GetComponent<PlayerShootLightCard>().enabled = false;
         player.GetComponent<PlayerShootDamageCard>().enabled = false;
     }
 
     public void ChangeToLightCard()
     {
-        player.GetComponent<PlayerShootCardBuildBlock>().enabled = false;
+        player.GetComponent<PlayerShootBuildCard>().enabled = false;
         player.GetComponent<PlayerShootLightCard>().enabled = true;
         player.GetComponent<PlayerShootDamageCard>().enabled = false;
     }

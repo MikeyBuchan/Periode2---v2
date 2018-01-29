@@ -13,7 +13,16 @@ public class EnemyHealth : MonoBehaviour
         if (hp <= 0)
         {
             Destroy(gameObject, .3f);
-            Instantiate(deathParticle, transform.position, Quaternion.identity);
+            //Instantiate(deathParticle, transform.position, Quaternion.identity);
+        }
+    }
+
+    void OnCollisionEnter(Collision c)
+    {
+        if (c.gameObject.tag == "DamageCard")
+        {
+            print("Hit");
+            hp -= Random.Range(15, 30);
         }
     }
 }

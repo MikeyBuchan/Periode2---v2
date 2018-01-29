@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BuildCardShoot : MonoBehaviour
+public class CardShootBuild : MonoBehaviour
 {
     private Vector3 blockPos;
     public GameObject buildWall;
@@ -27,13 +27,6 @@ public class BuildCardShoot : MonoBehaviour
         {
             blockPos = transform.position;
             Instantiate(buildWall, blockPos, buildWall.transform.rotation);
-            Destroy(gameObject);
-        }
-
-        if (c.gameObject.tag == "BuildCube")
-        {
-            blockPos = transform.position;
-            Instantiate(buildWall, blockPos, blockRot);
             Destroy(gameObject);
         }
     }

@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageCardShoot : MonoBehaviour
+public class CardShootDamage : MonoBehaviour
 {
     private float timer;
     public Vector3 movement;
     public float speed;
     public float destroyOnTime;
-    public GameObject enemy;
-    public int damage;
     
 
 	void Update ()
@@ -25,10 +23,6 @@ public class DamageCardShoot : MonoBehaviour
 
     private void OnCollisionEnter(Collision c)
     {
-        if (c.gameObject.tag == "Enemy")
-        {
-            c.gameObject.GetComponent<EnemyHealth>().hp -= damage;
             Destroy(gameObject);
-        }
     }
 }
