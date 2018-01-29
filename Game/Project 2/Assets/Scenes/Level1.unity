@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mov: {x: 0, y: 0, z: 0}
-  movSpeed: 0
+  movSpeed: 3
   player: {fileID: 745175870}
 --- !u!114 &343638777
 MonoBehaviour:
