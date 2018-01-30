@@ -1,22 +1,15 @@
 fileFormatVersion: 2
-guid: 57726426e807f564490c428b771f3d85
-timeCreated: 1517261260
+guid: 0b3207014ee2bce43974683b7bab3bff
+timeCreated: 1517315794
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Eyes
-    100002: Ghost
-    100004: //RootNode
-    400000: Eyes
-    400002: Ghost
-    400004: //RootNode
-    2300000: Eyes
-    2300002: Ghost
-    3300000: Eyes
-    3300002: Ghost
-    4300000: Eyes
-    4300002: Ghost
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Ghost
   materials:
     importMaterials: 1
     materialName: 0

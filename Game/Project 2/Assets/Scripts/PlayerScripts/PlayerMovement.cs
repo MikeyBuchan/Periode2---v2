@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public Vector3 movement;
     public float movSpeed;
-    public float sprintSpeedMultiplier;
+    public float sprintSpeed;
+    public float defaultSpeed;
 
     private Rigidbody playerRig;
     public Vector3 jumpVelocity;
@@ -17,28 +18,32 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerRig = GetComponent<Rigidbody>();
+        movSpeed = defaultSpeed;
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         movement.x = Input.GetAxis("Horizontal");
         movement.z = Input.GetAxis("Vertical");
         transform.Translate(movement * movSpeed * Time.deltaTime);
 
-        if (Input.GetButtonDown("Sprint"))
-        {
-            movSpeed = movSpeed * sprintSpeedMultiplier;
-        }
-        if (Input.GetButtonUp("Sprint"))
-        {
-            movSpeed = movSpeed / sprintSpeedMultiplier;
-        }
-
         if (Input.GetButtonDown("Jump") && jumpAmount >=1)
         {
             playerRig.velocity = jumpVelocity;
             jumpAmount -= 1;
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Sprint"))
+        {
+            movSpeed = sprintSpeed;
+        }
+        if (Input.GetButtonUp("Sprint"))
+        {
+            movSpeed = defaultSpeed;
         }
     }
 

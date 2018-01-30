@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour 
 {
@@ -9,10 +8,15 @@ public class EnemyMovement : MonoBehaviour
     public float movSpeed;
     public Transform player;
 	
+
+    void Start ()
+    {
+        mov.z = 1;
+    }
 	
 	void Update () 
 	{
         transform.LookAt(player);
-        transform.Translate(transform.forward * movSpeed * Time.deltaTime);
+        transform.Translate(mov * movSpeed * Time.deltaTime,Space.Self);
 	}
 }

@@ -30,7 +30,7 @@ GameObject:
   - component: {fileID: 114679183333809874}
   m_Layer: 11
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +61,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1901825277024504}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 84.84, y: 2.22, z: 135.11}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4459044656713134}
@@ -130,7 +130,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b78a467029125de4392f06f00f2432d7, type: 2}
+  - {fileID: 2100000, guid: a87e6a81b40402c4da49cfc48a027a90, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -169,7 +169,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!65 &65563520028015970
 BoxCollider:
@@ -181,7 +181,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.59, y: 2.2186787, z: 0.28823906}
+  m_Size: {x: 0.8, y: 2.2186787, z: 0.28823906}
   m_Center: {x: 0, y: 1.1092397, z: 0.00000025331974}
 --- !u!81 &81841574239382794
 AudioListener:
@@ -241,7 +241,7 @@ MonoBehaviour:
   movement: {x: 0, y: 0, z: 0}
   movSpeed: 5
   sprintSpeedMultiplier: 1.7
-  jumpVelocity: {x: 0, y: 0, z: 0}
+  jumpVelocity: {x: 0, y: 4.5, z: 0}
   jumpAmount: 0
   allowedJumpAmount: 1
 --- !u!114 &114774393073117654
