@@ -19,19 +19,24 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N))
+        if (enemiesLeft <= 0)
         {
-            spawnNextWave = true;
+            if (Input.GetButtonDown("NextWave"))
+            {
+                spawnNextWave = true;
+            }
+
         }
 
         if (spawnNextWave == true)
         {
-            
+            enemiesLeft = spawnEnemies;
             spawnNextWave = false;
             for (int i = 0; i < spawnEnemies; i++)
             {
                 Instantiate(enemy, spawnLocation, spawnRotation);
             }
+            spawnEnemies += 3;
         }
     }
 }

@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (hp <= 0)
         {
-            spawner.GetComponent<EnemySpawner>().enemiesLeft -= 1;
+            GameObject.FindWithTag("EnemySpawner").GetComponent<EnemySpawner>().enemiesLeft -= 1;
             //Instantiate(deathParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

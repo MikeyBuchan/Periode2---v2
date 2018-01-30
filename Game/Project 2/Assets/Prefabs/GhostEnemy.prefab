@@ -126,8 +126,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mov: {x: 0, y: 0, z: 0}
   movSpeed: 3
-  playerTransform: {fileID: 0}
-  player: {fileID: 0}
+  playerTransform: {fileID: 4149800575313994, guid: f5c3bc19100aa954ea90eedc70d233e3,
+    type: 2}
+  player: {fileID: 1901825277024504, guid: f5c3bc19100aa954ea90eedc70d233e3, type: 2}
 --- !u!114 &114362565175112234
 MonoBehaviour:
   m_ObjectHideFlags: 1

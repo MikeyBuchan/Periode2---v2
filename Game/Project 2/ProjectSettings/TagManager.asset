@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - DamageCard
   - BuildWall
+  - EnemySpawner
+  - SunLight
   layers:
   - Default
   - TransparentFX
