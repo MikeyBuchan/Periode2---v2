@@ -125,3 +125,5 @@ public class UIgame : MonoBehaviour
         GameObject.FindWithTag("Player").GetComponent<PlayerShootDamageCard>().enabled = false;
     }
 }
+
+// make a list of game objects / locations at put that in the instantiate location

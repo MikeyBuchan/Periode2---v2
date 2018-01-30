@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GManager : MonoBehaviour 
 {
-    public int enemiesLeft;
 	
 	void Start () 
 	{

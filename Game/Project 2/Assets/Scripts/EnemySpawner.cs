@@ -11,6 +11,7 @@ public class EnemySpawner : MonoBehaviour
     public bool spawnNextWave = false;
 
     public int spawnEnemies;
+    public Transform[] enemySpawnLoc;
 
     void Start()
     {
@@ -34,7 +35,7 @@ public class EnemySpawner : MonoBehaviour
             spawnNextWave = false;
             for (int i = 0; i < spawnEnemies; i++)
             {
-                Instantiate(enemy, spawnLocation, spawnRotation);
+                Instantiate(enemy, enemySpawnLoc[Random.Range(0,4)].position, spawnRotation);
             }
             spawnEnemies += 3;
         }
