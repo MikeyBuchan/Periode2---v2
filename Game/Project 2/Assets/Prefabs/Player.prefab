@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33060558937555748}
   - component: {fileID: 23386697473480764}
   - component: {fileID: 65563520028015970}
-  - component: {fileID: 54263930615740104}
+  - component: {fileID: 54065706540097114}
   - component: {fileID: 114758810482286698}
   - component: {fileID: 114437110397347466}
   - component: {fileID: 114788139790539718}
@@ -156,7 +156,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1901825277024504}
   m_Mesh: {fileID: 4300000, guid: f9ac1fb18030b2a45ab4c5edcd4c275b, type: 3}
---- !u!54 &54263930615740104
+--- !u!54 &54065706540097114
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -169,7 +169,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &65563520028015970
 BoxCollider:
@@ -181,7 +181,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 2.2186787, z: 0.28823906}
+  m_Size: {x: 0.8, y: 2.2186787, z: 0.4}
   m_Center: {x: 0, y: 1.1092397, z: 0.00000025331974}
 --- !u!81 &81841574239382794
 AudioListener:
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraX: {x: 0, y: 0, z: 0}
   cameraY: {x: 0, y: 0, z: 0}
-  sensitivity: 250
+  sensitivity: 220
 --- !u!114 &114679183333809874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d065cfeb618a752438185dfbea7815ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightCard: {fileID: 1824740628213048, guid: 3067c3b711561e54086cf01f7165f469, type: 2}
+  lightCard: {fileID: 1854326328332650, guid: 1c64e16b4b1c1d64ba1bffd8fc9e9669, type: 2}
   shootPos: {x: 0, y: 0, z: 0}
   shootRot: {x: 0, y: 0, z: 0, w: 0}
   allowedToShoot: 1
@@ -239,8 +239,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {x: 0, y: 0, z: 0}
-  movSpeed: 5
-  sprintSpeedMultiplier: 1.7
+  movSpeed: 0
+  sprintSpeed: 8
+  defaultSpeed: 5
   jumpVelocity: {x: 0, y: 4.5, z: 0}
   jumpAmount: 0
   allowedJumpAmount: 1
@@ -255,7 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8644c3309787a964aae5294f407225bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildCard: {fileID: 1824740628213048, guid: db1eb3136cbe3ce40a80bfffa85a90b4, type: 2}
+  buildCard: {fileID: 1863886922993924, guid: b93171763755c9b49b9fa6f102d2aec8, type: 2}
   shootPos: {x: 0, y: 0, z: 0}
   shootRot: {x: 0, y: 0, z: 0, w: 0}
   allowedToShoot: 1
@@ -271,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 990f34c133e6ba7439da846cbbb1ae30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageCard: {fileID: 1824740628213048, guid: 18094b8d324c43241a2af2a77d6a378a, type: 2}
+  damageCard: {fileID: 1350031895496410, guid: 28c3e69af92eb2a4582864704a45316a, type: 2}
   shootPos: {x: 0, y: 0, z: 0}
   shootRot: {x: 0, y: 0, z: 0, w: 0}
   allowedToShoot: 1
