@@ -6,14 +6,15 @@ public class EnemyHealth : MonoBehaviour
 {
     public int hp = 100;
     public GameObject deathParticle;
-
+    public GameObject spawner;
 
     void Update ()
     {
         if (hp <= 0)
         {
-            Destroy(gameObject, .3f);
+            spawner.GetComponent<EnemySpawner>().enemiesLeft -= 1;
             //Instantiate(deathParticle, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 
@@ -21,7 +22,6 @@ public class EnemyHealth : MonoBehaviour
     {
         if (c.gameObject.tag == "DamageCard")
         {
-            print("Hit");
             hp -= Random.Range(15, 30);
         }
     }

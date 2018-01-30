@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 65462692359357030}
   - component: {fileID: 114572287807609890}
   - component: {fileID: 108213820440643668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LightCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
