@@ -7,8 +7,6 @@ using UnityEngine.Audio;
 
 public class UIMainMenu : MonoBehaviour 
 {
-    private float musicVolumeHolder;
-    public Text musicVolume;
     public AudioMixer menuMusicMixer;
 
 	public void NewGame()
@@ -21,10 +19,8 @@ public class UIMainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void MenuMusic()
+    public void SetMusicLvL (float musicLvL)
     {
-        musicVolumeHolder = GameObject.Find("MenuMusicSlider").GetComponent<Slider>().value;
-        musicVolume.text = musicVolumeHolder.ToString();
-        menuMusicMixer.SetFloat("Volume", musicVolumeHolder);
+        menuMusicMixer.SetFloat("MenuMusic", musicLvL);
     }
 }
