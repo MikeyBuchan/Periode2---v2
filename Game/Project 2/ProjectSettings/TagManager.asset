@@ -23,8 +23,8 @@ TagManager:
   - Ground
   - BuildCube
   - Player
-  - 
-  - 
+  - Don't Collide With Trees
+  - Tree
   - 
   - 
   - 
