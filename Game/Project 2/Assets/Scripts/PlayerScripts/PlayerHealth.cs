@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour 
 {
     public float health;
-    public string deathScene;
+    public int deathScene;
 
 
     void OnCollisionEnter (Collision c)

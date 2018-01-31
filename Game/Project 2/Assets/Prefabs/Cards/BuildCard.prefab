@@ -121,9 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e775c5825204374ab32fb7fa7864b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildWall: {fileID: 1162052185335370, guid: 04e6204301d0f514382e1c19d16bd06e, type: 2}
   v: {x: 0, y: 0, z: 1}
-  blockRot: {x: 0, y: 0, z: 0, w: 0}
+  wallSpawnRotation: {x: 0, y: 0, z: 0, w: 0}
+  wallRot: {x: 0, y: 0, z: 0, w: 0}
+  buildWall: {fileID: 1750044947687044, guid: 04e6204301d0f514382e1c19d16bd06e, type: 2}
   speed: 15
   timer: 0
   destroyOnTime: 7.5

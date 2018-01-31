@@ -20,9 +20,17 @@ public class UIgame : MonoBehaviour
     public Text FOV;
     public Text enemiesLeftText;
 
+    public string blank;
+    
+    public GameObject damageCardActive;
+    public GameObject buildCardActive;
+    public GameObject lightCardActive;
+
 
     void Update()
     {
+        SelectionCardActive();
+
         if (Input.GetButtonDown("1"))
         {
             ChangeToDamageCard();
@@ -123,6 +131,30 @@ public class UIgame : MonoBehaviour
         GameObject.FindWithTag("Player").GetComponent<PlayerShootBuildCard>().enabled = false;
         GameObject.FindWithTag("Player").GetComponent<PlayerShootLightCard>().enabled = true;
         GameObject.FindWithTag("Player").GetComponent<PlayerShootDamageCard>().enabled = false;
+    }
+
+    public void SelectionCardActive()
+    {
+        if (GameObject.FindWithTag("Player").GetComponent<PlayerShootDamageCard>().enabled == true)
+        {
+            damageCardActive.SetActive(true);
+            buildCardActive.SetActive(false);
+            lightCardActive.SetActive(false);
+        }
+
+        if (GameObject.FindWithTag("Player").GetComponent<PlayerShootBuildCard>().enabled == true)
+        {
+            damageCardActive.SetActive(false);
+            buildCardActive.SetActive(true);
+            lightCardActive.SetActive(false);
+        }
+
+        if (GameObject.FindWithTag("Player").GetComponent<PlayerShootLightCard>().enabled == true)
+        {
+            damageCardActive.SetActive(false);
+            buildCardActive.SetActive(false);
+            lightCardActive.SetActive(true);
+        }
     }
 }
 

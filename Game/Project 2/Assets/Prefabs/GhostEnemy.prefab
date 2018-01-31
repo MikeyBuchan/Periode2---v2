@@ -141,7 +141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
-  deathParticle: {fileID: 0}
+  deathParticle: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
+    type: 2}
   spawner: {fileID: 1967137636054532, guid: ce0ba1b1b81a97743baf5fa0480fbe96, type: 2}
 --- !u!136 &136648499107979260
 CapsuleCollider:
