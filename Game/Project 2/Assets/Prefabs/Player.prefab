@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114788139790539718}
   - component: {fileID: 114774393073117654}
   - component: {fileID: 114679183333809874}
+  - component: {fileID: 114990618608828096}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -62,7 +63,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1901825277024504}
   m_LocalRotation: {x: 0, y: -0.9396926, z: 0, w: 0.34202018}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 157.16147, y: 0.73, z: 150.96333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4459044656713134}
@@ -290,6 +291,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 8c7a70a9248b8cd4bb48fec48a9e87b6, type: 2}
+--- !u!114 &114990618608828096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1901825277024504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c9f83e276a5a140a74970f58100875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathScene: 2
 --- !u!124 &124711137958499444
 Behaviour:
   m_ObjectHideFlags: 1

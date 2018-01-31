@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour 
 {
-    public float health;
     public int deathScene;
 
 
