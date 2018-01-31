@@ -5,9 +5,10 @@ using UnityEngine;
 public class CardShootBuild : MonoBehaviour
 {
     private Vector3 blockPos;
-    public GameObject buildWall;
     public Vector3 v;
-    public Quaternion blockRot;
+    public Quaternion wallSpawnRotation;
+    public Quaternion wallRot;
+    public GameObject buildWall;
     public float speed;
     public float timer;
     public float destroyOnTime;
@@ -18,6 +19,7 @@ public class CardShootBuild : MonoBehaviour
         Destroy(gameObject, destroyOnTime);
 
         transform.Translate(v * speed * Time.deltaTime, Space.Self);
+        
     }
 
 
@@ -25,8 +27,9 @@ public class CardShootBuild : MonoBehaviour
     {
         if (c.gameObject.tag == "Ground")
         {
+            wallRot = new Quaternion(0, transform.rotation.y, 0,transform.rotation.w);
             blockPos = transform.position;
-            Instantiate(buildWall, blockPos, buildWall.transform.rotation);
+            Instantiate(buildWall, blockPos, wallRot);
             Destroy(gameObject);
         }
     }
