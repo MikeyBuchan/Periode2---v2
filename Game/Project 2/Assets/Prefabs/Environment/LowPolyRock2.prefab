@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4347636983458270}
   - component: {fileID: 33323684711669146}
   - component: {fileID: 23684306079468506}
+  - component: {fileID: 135090577484694764}
   m_Layer: 0
   m_Name: LowPolyRock2
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1377835370412672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 150.14435, y: 1.9955338, z: 131.31976}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1377835370412672}
   m_Mesh: {fileID: 4300000, guid: 14cafad4e03eefe4987c6195e269c4e9, type: 3}
+--- !u!135 &135090577484694764
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1377835370412672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.8515624
+  m_Center: {x: -0.002605319, y: 0.03, z: 0.04}
