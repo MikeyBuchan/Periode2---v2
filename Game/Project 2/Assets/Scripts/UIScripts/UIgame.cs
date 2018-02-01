@@ -27,6 +27,11 @@ public class UIgame : MonoBehaviour
     public GameObject lightCardActive;
 
 
+    void Start()
+    {
+        Cursor.visible = false;
+    }
+
     void Update()
     {
         SelectionCardActive();
@@ -44,6 +49,11 @@ public class UIgame : MonoBehaviour
         if (Input.GetButtonDown("3"))
         {
             ChangeToLightCard();
+        }
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            Cursor.visible = true;
         }
 
         enemiesLeftText.text = "Ghosts left: " + GameObject.FindWithTag("EnemySpawner").GetComponent<EnemySpawner>().enemiesLeft.ToString();
@@ -156,6 +166,9 @@ public class UIgame : MonoBehaviour
             lightCardActive.SetActive(true);
         }
     }
-}
 
-// make a list of game objects / locations at put that in the instantiate location
+    public void CursorViewOff ()
+    {
+        Cursor.visible = false;
+    }
+}
